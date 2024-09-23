@@ -16,7 +16,7 @@ public class VacationPayCalculatorService {
                             String vacationStartDate, String vacationEndDate) throws DateTimeParseException, IllegalArgumentException
     {
         if (yearlyPay <= 0) throw new IllegalArgumentException("yearlyPay has to be positive.");
-        if (daysOfVacation < 0) throw new IllegalArgumentException("daysOfVacation has to be positive.");
+        if (daysOfVacation <= 0) throw new IllegalArgumentException("daysOfVacation has to be positive.");
 
         double vacationPay = -1;
 
